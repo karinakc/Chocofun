@@ -16,6 +16,7 @@ import productSmiley from './assets/product-smiley.png'
 import productJoy from './assets/product-joy.png'
 import productCrush from './assets/product-crush.png'
 import chocofunScene from './assets/chocofun.png'
+import logo from './assets/logo.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -39,7 +40,7 @@ const milestones = [
 function BrandMark({ dark = false }: { dark?: boolean }) {
   return (
     <a className={`brand-mark ${dark ? 'brand-mark--dark' : ''}`} href="#top" aria-label="Chocofun home">
-      <span>Choco</span><i>fun</i>
+      <img src={logo} alt="" />
     </a>
   )
 }
@@ -287,7 +288,7 @@ function App() {
           <footer>
             <BrandMark dark />
             <div className="footer-lockup"><b>CHOCOFUN</b><span>SINCE 1999</span><span>A SUJAL FOODS BRAND</span></div>
-            <div className="footer-links"><a href="https://www.instagram.com/chocofun_nepal/" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={19} /> INSTAGRAM</a><a href="https://www.sujal.com.np/" target="_blank" rel="noreferrer">SUJAL FOODS <ArrowUpRight size={16} /></a></div>
+            <div className="footer-links"><a href="https://www.instagram.com/chocofun.nepal/" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={19} /> INSTAGRAM</a><a href="https://www.sujal.com.np/" target="_blank" rel="noreferrer">SUJAL FOODS <ArrowUpRight size={16} /></a></div>
           </footer>
         </section>
       </main>
