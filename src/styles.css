@@ -152,6 +152,21 @@ h1, h2, h3, p { margin-top: 0; }
 .only-title { position: absolute; z-index: 8; bottom: 5vh; left: 4vw; margin: 0; font: clamp(80px, 16vw, 280px)/.75 'Archivo Black'; letter-spacing: -.1em; white-space: nowrap; }
 .only-title span { color: var(--red); }
 
+.studio-credit { position: relative; min-height: clamp(560px, 76svh, 760px); overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(55px, 8vh, 92px) clamp(24px, 9vw, 150px) clamp(34px, 5vh, 56px); color: var(--brown); background: linear-gradient(125deg, #fff2d1 0%, #ffe8ad 72%, #ffd778 100%); border-top: 10px solid var(--red); }
+.studio-credit::before { content: ''; position: absolute; width: clamp(260px, 31vw, 540px); aspect-ratio: 1; right: -9%; bottom: -32%; border: 1px solid rgba(53,21,14,.18); border-radius: 50%; box-shadow: 0 0 0 35px rgba(215,25,32,.055), 0 0 0 70px rgba(53,21,14,.035); }
+.studio-credit::after { content: ''; position: absolute; inset: auto 0 0; height: 9px; background: var(--brown); }
+.credit-inner { position: relative; z-index: 2; max-width: 980px; }
+.credit-kicker { margin: 0 0 clamp(28px, 5vh, 50px); color: var(--red); font-size: clamp(9px, .8vw, 12px); font-weight: 800; letter-spacing: .22em; }
+.studio-credit h2 { max-width: 900px; margin: 0; font: clamp(38px, 5.2vw, 78px)/.92 'Archivo Black', sans-serif; letter-spacing: -.065em; }
+.studio-credit h2 em { color: var(--red); font-style: normal; }
+.credit-copy { max-width: 620px; margin: 28px 0 0; font-size: clamp(12px, 1vw, 15px); line-height: 1.55; }
+.credit-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.credit-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 17px; border: 1px solid rgba(53,21,14,.35); font-size: 9px; font-weight: 800; letter-spacing: .1em; transition: color .2s, background .2s, transform .2s; }
+.credit-button--solid { color: var(--cream); background: var(--brown); border-color: var(--brown); }
+.credit-button:hover { color: var(--cream); background: var(--red); border-color: var(--red); transform: translateY(-2px); }
+.credit-meta { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 55px; font-size: clamp(8px, .72vw, 11px); font-weight: 800; letter-spacing: .16em; }
+.credit-meta > :nth-child(2) { text-align: center; }.credit-meta > :last-child { text-align: right; }
+
 .final { position: relative; min-height: 120svh; overflow: hidden; padding: 9vh 5vw 0; color: var(--cream); text-align: center; background: var(--red); }
 .final-sun { position: absolute; width: 56vw; aspect-ratio: 1; border-radius: 50%; left: 50%; top: 18%; transform: translateX(-50%); background: var(--yellow); }
 .final-kicker { position: relative; z-index: 2; font-size: 11px; font-weight: 800; letter-spacing: .16em; }
@@ -194,6 +209,14 @@ footer { position: absolute; z-index: 8; inset: auto 5vw 30px; display: grid; gr
   .history { min-height: auto; padding: 90px 20px 120px; background: linear-gradient(160deg, var(--cream), #f4c56c); }.history-stage { min-height: auto; overflow: visible; background: none; }.history-heading { position: relative; left: 0; top: 0; margin: 20px 0 70px; }.milestones { position: relative; }.milestone { position: relative; opacity: 1 !important; min-height: 52svh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; border-top: 1px solid rgba(53,21,14,.2); }.giant-year { font-size: 35vw; }.milestone-detail { position: static; transform: none; flex-direction: column; align-items: flex-start; gap: 10px; }.history-photos { display: none; }.history-mid, .history-end { position: relative; opacity: 1; inset: auto; transform: none; margin: 20vh 0; font-size: 14vw; text-align: left; }.history-end { margin-bottom: 0; }
   .family { min-height: auto; overflow: visible; background: var(--red) !important; }.family-top { position: relative; height: 88px; }.family-top .section-index { top: 25px; }.family-top p { display: none; }.product-panels { min-height: auto; }.product-panel { position: relative; min-height: 100svh; opacity: 1 !important; background: var(--panel-color); }.product-panel::after { width: 78vw; right: -18vw; }.product-panel h2 { top: 21%; font-size: 22vw; color: rgba(70,15,10,.2); }.product-pack { width: 94vw; left: 50%; top: 47%; max-height: 52vh; }.product-copy { width: calc(100% - 40px); left: 20px; right: auto; top: auto; bottom: 8%; }.product-copy h3 { font-size: clamp(31px, 9vw, 54px); }.product-copy p { font-size: 13px; }.product-count { left: auto; right: 20px; bottom: 4%; }.product-scribble { top: 12%; left: 20px; }
   .memories { min-height: 225svh; padding: 100px 20px; }.memory-copy { padding-top: 35px; }.memory-line > span { font-size: clamp(38px, 12.5vw, 64px); }.memory-scatter { min-height: 120svh; margin-top: 10vh; }.memory-card { padding: 8px 8px 32px; }.card-1 { width: 67vw; left: 1%; top: 0; }.card-2 { width: 69vw; right: 0; top: 24%; }.card-3 { width: 64vw; left: 2%; top: 49%; }.card-4 { width: 64vw; right: 0; top: 73%; }.only-title { left: 12px; right: 12px; bottom: 3vh; font-size: 11.5vw; white-space: nowrap; }
+  .studio-credit { min-height: 720px; padding: 64px 20px 34px; }
+  .credit-kicker { max-width: 230px; margin-bottom: 42px; line-height: 1.6; }
+  .studio-credit h2 { max-width: 640px; font-size: clamp(34px, 9.7vw, 60px); }
+  .credit-copy { max-width: 520px; margin-top: 22px; }
+  .credit-actions { flex-direction: column; align-items: flex-start; margin-top: 25px; }
+  .credit-button { width: min(100%, 245px); }
+  .credit-meta { grid-template-columns: 1fr; gap: 13px; margin-top: 50px; line-height: 1.4; }
+  .credit-meta > :nth-child(2), .credit-meta > :last-child { text-align: left; }
   .final { min-height: 106svh; padding: 8vh 18px 0; }.final-sun { width: 94vw; top: 24%; }.final h2 { font-size: 11.2vw; }.final-pack { width: 100vw; max-width: none; margin-left: -18px; margin-top: 7vh; }.liquid-rise { height: 35%; } footer { inset: auto 20px 22px; grid-template-columns: 1fr auto; gap: 25px; }.footer-lockup { align-items: flex-end; }.footer-links { grid-column: 1 / -1; grid-row: 2; justify-content: space-between; }.brand-mark--dark { justify-self: start; grid-column: 1; font-size: 26px; }
 }
 

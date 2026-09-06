@@ -261,6 +261,23 @@ function App() {
           <h2 className="only-title">ONLY <span>CHOCOFUN.</span></h2>
         </section>
 
+        <section className="studio-credit" aria-labelledby="studio-credit-title">
+          <div className="credit-inner">
+            <p className="credit-kicker">DIGITAL EXPERIENCE BY TRIOVATE LABS</p>
+            <h2 id="studio-credit-title">BUILT FOR THE CRUNCH.<br /><em>CRAFTED FOR THE SCROLL.</em></h2>
+            <p className="credit-copy">A playful digital experience shaped around Chocofun&apos;s colour, texture and unmistakable crispy energy.</p>
+            <div className="credit-actions">
+              <a className="credit-button credit-button--solid" href="https://triovatelabs.com" target="_blank" rel="noreferrer">VISIT TRIOVATE LABS <ArrowUpRight size={15} /></a>
+              <a className="credit-button" href="mailto:triovatelabs@gmail.com">START A PROJECT</a>
+            </div>
+          </div>
+          <div className="credit-meta">
+            <a href="https://triovatelabs.com" target="_blank" rel="noreferrer">TRIOVATELABS.COM</a>
+            <a href="mailto:triovatelabs@gmail.com">TRIOVATELABS@GMAIL.COM</a>
+            <span>CONCEPT FOR CHOCOFUN</span>
+          </div>
+        </section>
+
         <section className="final">
           <div className="final-sun" aria-hidden="true"></div>
           <p className="final-kicker">NEPAL GREW UP WITH CHOCOFUN.</p>
